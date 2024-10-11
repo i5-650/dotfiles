@@ -22,6 +22,11 @@
         pkgs.htop
         pkgs.nodejs_22
         pkgs.lunarvim
+        pkgs.rustup
+        pkgs.zsh
+        pkgs.oh-my-zsh
+        pkgs.elements
+        pkgs.bettercap
     ];
 
 
@@ -73,6 +78,20 @@ in
     '';
 
 
+      system.defaults = {
+        dock.persistent-apps = [
+          "/Applications/Firefox.app"
+          "/Applications/WezTerm.app"
+          "/Applications/Discord.app"
+          "/Applications/Spotify.app"
+          "/Applications/OrbStack.app"
+          "/Applications/Microsoft Word.app"
+          "/System/Applications/Messages.app"
+          "/System/Applications/Mail.app"
+          "/System/Applications/Launchpad.app"
+        ];
+        trackpad.Clicking = true;
+      };
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
