@@ -27,6 +27,12 @@
         pkgs.oh-my-zsh
         pkgs.elements
         pkgs.bettercap
+        pkgs.cairo
+        pkgs.gtk4
+        pkgs.poppler
+        pkgs.glib
+        pkgs.viu
+        pkgs.poppler_utils
     ];
 
 
@@ -45,6 +51,8 @@
         "stats"
       ];
       brews= [
+        "pkg-config"
+        "poppler"
         # All package you want to install with brew
       ];
 
