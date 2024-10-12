@@ -25,7 +25,6 @@
         pkgs.rustup
         pkgs.zsh
         pkgs.oh-my-zsh
-        pkgs.elements
         pkgs.bettercap
         pkgs.cairo
         pkgs.gtk4
@@ -44,12 +43,13 @@
     homebrew = {
       enable = true;
       casks = [
-        "firefox"
         "wezterm"
         "the-unarchiver"
         "spotify"
         "orbstack"
         "stats"
+        "element"
+        "orion"
       ];
       brews= [
         "pkg-config"
@@ -89,7 +89,7 @@ in
 
       system.defaults = {
         dock.persistent-apps = [
-          "/Applications/Firefox.app"
+          "/Applications/Orion.app"
           "/Applications/WezTerm.app"
           "/Applications/Discord.app"
           "/Applications/Spotify.app"
