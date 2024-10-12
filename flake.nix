@@ -33,6 +33,7 @@
         pkgs.glib
         pkgs.viu
         pkgs.poppler_utils
+        pkgs.go
     ];
 
 
