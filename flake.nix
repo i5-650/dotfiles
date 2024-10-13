@@ -33,6 +33,9 @@
         pkgs.viu
         pkgs.poppler_utils
         pkgs.go
+        pkgs.qemu
+        pkgs.k9s
+        pkgs.lazygit
     ];
 
 
