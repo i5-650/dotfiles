@@ -25,7 +25,6 @@
         pkgs.rustup
         pkgs.zsh
         pkgs.oh-my-zsh
-        pkgs.bettercap
         pkgs.cairo
         pkgs.gtk4
         pkgs.poppler
