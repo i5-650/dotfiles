@@ -35,8 +35,8 @@
         pkgs.qemu
         pkgs.k9s
         pkgs.lazygit
+        pkgs.dotnetCorePackages.sdk_8_0_1xx # this is temporary, for school...
     ];
-
 
     fonts.packages = [
         pkgs.jetbrains-mono
@@ -52,6 +52,8 @@
         "stats"
         "element"
         "orion"
+        "discord"
+        "secretive"
       ];
       brews= [
         "pkg-config"
