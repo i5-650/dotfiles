@@ -54,6 +54,9 @@
         "orion"
         "discord"
         "secretive"
+        "whatsapp"
+        "vmware-fusion"
+        "utm"
       ];
       brews= [
         "pkg-config"
