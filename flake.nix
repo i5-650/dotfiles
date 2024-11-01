@@ -23,8 +23,6 @@
         pkgs.nodejs_22
         pkgs.lunarvim
         pkgs.rustup
-        pkgs.zsh
-        pkgs.oh-my-zsh
         pkgs.cairo
         pkgs.gtk4
         pkgs.poppler
@@ -36,6 +34,10 @@
         pkgs.k9s
         pkgs.lazygit
         pkgs.dotnetCorePackages.sdk_8_0_1xx # this is temporary, for school...
+        pkgs.openvpn
+        pkgs.netcat-gnu
+        pkgs.fish
+        pkgs.fastfetch
     ];
 
     fonts.packages = [
@@ -57,10 +59,12 @@
         "whatsapp"
         "vmware-fusion"
         "utm"
+        "signal"
       ];
       brews= [
         "pkg-config"
         "poppler"
+        # "fish"
         # All package you want to install with brew
       ];
 
@@ -117,8 +121,8 @@ in
       nix.settings.experimental-features = "nix-command flakes";
 
       # Create /etc/zshrc that loads the nix-darwin environment.
-      programs.zsh.enable = true;  # default shell on catalina
-      # programs.fish.enable = true;
+      # programs.zsh.enable = true;  # default shell on catalina
+      programs.fish.enable = true;
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
