@@ -33,7 +33,6 @@
         pkgs.qemu
         pkgs.k9s
         pkgs.lazygit
-        pkgs.dotnetCorePackages.sdk_8_0_1xx # this is temporary, for school...
         pkgs.openvpn
         pkgs.netcat-gnu
         pkgs.fish
@@ -60,6 +59,8 @@
         "vmware-fusion"
         "utm"
         "signal"
+        "miniconda"
+        "visual-studio-code"
       ];
       brews= [
         "pkg-config"
@@ -87,14 +88,14 @@ in
     pkgs.lib.mkForce ''
         # Set up applications.
         echo "setting up /Applications..." >&2
-        rm -rf /Applications/Nix\ Apps
-        mkdir -p /Applications/Nix\ Apps
-        find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-        while read src; do
-            app_name=$(basename "$src")
-            echo "copying $src" >&2
-            ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-        done
+        # rm -rf /Applications/Nix\ Apps
+        # mkdir -p /Applications/Nix\ Apps
+        # find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
+        # while read src; do
+        #     app_name=$(basename "$src")
+        #     echo "copying $src" >&2
+        #     ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
+        # done
     '';
 
 
