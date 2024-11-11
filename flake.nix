@@ -61,6 +61,8 @@
         "signal"
         "miniconda"
         "visual-studio-code"
+        "aldente"
+        "amethyst"
       ];
       brews= [
         "pkg-config"
