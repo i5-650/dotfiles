@@ -62,7 +62,7 @@
         "miniconda"
         "visual-studio-code"
         "aldente"
-        "amethyst"
+        "intellij-idea"
       ];
       brews= [
         "pkg-config"
