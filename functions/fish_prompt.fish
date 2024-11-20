@@ -1,0 +1,1 @@
+/Users/i5-650/.local/share/omf/themes/boxfish/fish_prompt.fish

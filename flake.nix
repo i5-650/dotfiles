@@ -63,6 +63,7 @@
         "visual-studio-code"
         "aldente"
         "intellij-idea"
+        "firefox"
       ];
       brews= [
         "pkg-config"
